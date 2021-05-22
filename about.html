@@ -41,12 +41,12 @@
     </script>
     <section class="cuadrado">
 
-        <div id="texfet"> Sobre nosotros
+        <div class="texfet"> Sobre nosotros
         </div>
 
         <section class="des1">
             <section id="fet_text_1">
-                <div id="fet_tittle"> Nuestro proyecto </div>
+                <div class="fet_tittle"> Nuestro proyecto </div>
                 Nuestra idea es crear una plataforma web en la cual,
                 se generen de manera sencilla y rápida, programas de tutorado entre estudiantes de la Universidad de Guanajuato;
                 en esta plataforma, te podrás registrar como tutor o como alumno,
@@ -59,10 +59,13 @@
             </section><br>
         </section>
 
-
-
     </section>
-
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("div.fet_tittle");
+            header.classList.toggle("anima1", window.scrollY > 275);
+        })
+    </script>
 
     <footer>
         <nav>
