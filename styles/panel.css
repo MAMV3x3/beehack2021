@@ -11,14 +11,12 @@
 }
 
 body {
-    background-image: radial-gradient(circle at 90.56% 107.92%, #ddffff 0, #d2ffff 12.5%,
-    #c7ffff 25%, #beffff 37.5%, #b6fffb 50%, #afe9e9 62.5%, #a9d6d9 75%, #a4c5c9 87.5%, #9fb6ba 100%);
+    background-image: linear-gradient(to right top, #f86b43, #ff8437, #ff9f2a, #ffb921, #f9d423);
     min-height: 200vh;
 }
 
 header {
     position: fixed;
-    background-color: rgba(121, 121, 121, 0.205);
     top: 0;
     left: 0;
     width: 100%;
@@ -31,7 +29,7 @@ header {
 
 header.sticky {
     padding: 20px 100px;
-    background: rgba(121, 121, 121, 0.205);
+    background: rgb(255, 255, 255);
     transition: 1s;
 }
 
@@ -78,40 +76,11 @@ header.sticky ul li a {
 }
 
 .banner {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100vh;
+    background-size: cover;
     background-position: center;
-    margin-left: 0%;
-}
-
-aside{
-    width: 15%;
-    position: sticky;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    z-index: 999;
-    color: #000000;
-}
-
-#barralateral{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 10%;
-    align-items: center;
-    height: 90%;
-    width: 95%;
-    background-color: rgba(121, 121, 121, 0.205);
-    text-align: center;
-    text-decoration: none;
-}
-#lat{
-    position: static;
-    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -133,9 +102,7 @@ aside{
     right: 0;
     width: 10px;
     border-radius: 100px;
-    background: radial-gradient(circle at 50% -20.71%, #ddffff 0,
-     #d2ffff 12.5%, #c7ffff 25%, #beffff 37.5%, #b6fffb 50%, #afe9e9 62.5%,
-      #a9d6d9 75%, #a4c5c9 87.5%, #9fb6ba 100%);
+    background: linear-gradient(to top, #FF9F2A, #D17800, #A35400, #793000, #540B00);
 }
 
 @keyframes animate {
@@ -173,6 +140,7 @@ aside{
     animation: animate 5s linear infinite;
     filter: blur(30px);
 }
+
 
 footer {
     background-color: #30303000;
@@ -249,6 +217,9 @@ footer {
     font-weight: bolder;
     text-decoration: none;
     text-transform: uppercase;
+    /*-webkit-text-stroke: 2px var(--fill-color);
+        color: transparent;
+        color: rgb(21, 161, 226);*/
     background-clip: text;
     transition: 0.5s linear;
     background: linear-gradient(90deg, rgb(240, 237, 54), rgb(218, 212, 186));
@@ -267,5 +238,3 @@ footer {
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
 }
-
-
