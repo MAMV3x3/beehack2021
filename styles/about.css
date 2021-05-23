@@ -343,6 +343,32 @@ div.anima1{
       opacity: 1;
     }
   }
+#mater{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+}
 
-
+.mat1{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mat2{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card_image{
+    height: 100%;
+}
   
