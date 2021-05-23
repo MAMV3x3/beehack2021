@@ -82,6 +82,15 @@ header.sticky ul li a {
     background-size: cover;
     background-position: center;
 }
+.inicial{
+    background-image: url(../banner/Fondo_mamalon_transparente.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 30% 100%;
+    background-size: 70%;
+    -webkit-animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
 ::-webkit-scrollbar {
     width: 0;
@@ -392,3 +401,27 @@ footer {
     }
   }
   
+  @-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
