@@ -371,4 +371,9 @@ div.anima1{
 .card_image{
     height: 100%;
 }
+.card_image:hover{
+    min-height: 125%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
   
