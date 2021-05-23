@@ -27,6 +27,12 @@
             header.classList.toggle("sticky", window.scrollY > 670);
         })
     </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("section.banner");
+            header.classList.toggle("inicial", window.scrollY >= 0);
+        })
+    </script>
 
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
