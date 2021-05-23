@@ -7,9 +7,10 @@
 
     <title> About </title>
     <link rel="icon" href="../beehack2021/banner/beehigh-n-png.png">
-    <link rel="stylesheet" href="../beehack2021/styles/about.css" />
+    <link rel="stylesheet" href="../beehack2021/styles/panel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -24,9 +25,43 @@
     <script type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 670);
+            header.classList.toggle("sticky", window.scrollY > 15);
         })
     </script>
+
+    </script>
+    <section class="cardContainer">
+        <section class="filterBar">
+            <ul class="menu">
+                <li><section class="filter_head">
+                        <span class="material-icons">
+                            filter_list
+                        </span> 
+                        &nbspFiltrado
+                    </section>
+                   <ul>
+                       <li><a href="#">Artes</a></li>
+                       <li><a href="#">Ciencias Agrícolas</a></li>
+                       <li><a href="#">Ciencias de la Salud</a></li>
+                       <li><a href="#">Económico Administrativo</a></li>
+                       <li><a href="#">Ciencias Exactas</a></li>
+                       <li><a href="#">Sociales y Humanidades</a></li>
+                       <li><a href="#">Ingenierías</a></li>
+                   </ul>
+                </li>
+           </ul>
+            <!--<ul class="filterButton"><a href="">
+                    <li><span class="material-icons">
+                            filter_list
+                        </span>
+                        &nbspFiltrado
+                    </li>
+                    <ul>
+                        <li><a href=""> ola </a></li>
+                    </ul>
+                </a></ul> -->
+        </section>
+    </section>
 
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
@@ -39,7 +74,7 @@
             progress.style.height = progressHeight + "%";
         }
     </script>
-
+    <!--
     <footer>
         <nav>
             <ul id="pie_pagina">
@@ -54,6 +89,7 @@
             </ul>
         </nav>
     </footer>
+    -->
     <div id="derechos">
         <p>Todos los derechos reservados. BeeHigh © 2021</p>
     </div>
