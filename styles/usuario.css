@@ -262,21 +262,26 @@ footer {
 }
 
 .circulo{
-    margin-top: 80%;
-    margin-left: 60%;
+    margin-top: 40%;
+    margin-left: 45%;
     position: relative;
     background-color: white;
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 500px;
 }
 
 .datos{
-    color: white;
+    color:black;
     text-decoration: none;
     list-style-type: none;
     font-size: 20px;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 10%;
+    background-color:  white;
+    background-blend-mode: screen;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.795);
+    padding: 25px;
 }
