@@ -12,7 +12,7 @@
 
 body {
     background-image: linear-gradient(-20deg, #16c0a4 0%, #5497be 100%);
-    min-height: 150vh;
+    min-height: 100vh;
 }
 
 header {
@@ -323,3 +323,13 @@ footer {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+
+  #derechos1 {
+    background-color: rgba(255, 255, 255, 0);
+    height: 1300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: small;
+}
