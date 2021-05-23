@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <meta charset="iso-8559-1" />
+        <meta name="description" content="Equipo de robotica ENMSS" />
+        <meta name="keywords" content="Robotica prepa oficial de salamanca" />
+
+        <title> BeeHigh </title>
+        <link rel="icon" href="../beehack2021/banner/beehigh-n-png.png">
+        <link rel="stylesheet" href="../beehack2021/styles/usuario.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="../beehack2021/index.html" class="logo">BeeHigh</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Notificaciones</a></li>
+            </ul>
+        </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+    
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function () {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+
+        <section id="contenedor">
+            <section class="foto">
+                <section class="circulo">
+                    <div></div>
+                </section>
+            </section>
+            <section class="side">
+                <ul class="datos">
+                    <li>Nombre: Juan Alejandro Mireles Calderon</li><br>
+                    <li>Semestre: 2do</li><br>
+                    <li>Bachillerato/Carrera: general</li><br>
+                    <li>Promedio: 10</li><br>
+                    <li>Edad: 18</li><br>
+                </ul>
+            </section>
+        </section>
+    </body>
+
+</html>
